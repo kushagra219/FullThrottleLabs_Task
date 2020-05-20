@@ -55,8 +55,7 @@ class User(AbstractUser):
         if not self.id:
             random_str = random_string(9)
             self.id = random_str
-            super().save(*args, **kwargs)
-
+        super().save(*args, **kwargs)
 
 class ActivityPeriod(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="activity_periods")
