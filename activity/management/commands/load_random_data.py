@@ -21,7 +21,7 @@ class Command(BaseCommand):
 
         for _ in range(5):
             real_name = obj.name()
-            print(real_name)
+            # print(real_name)
             username = real_name.split()[0]
 
             try:
@@ -29,6 +29,8 @@ class Command(BaseCommand):
             except ObjectDoesNotExist:
                 user = User.objects.create(username=username)
                 user.real_name = real_name
+                timezone = obj.timezone()
+                user.tz = timezone
                 user.save()
 
             for _ in range(2):
