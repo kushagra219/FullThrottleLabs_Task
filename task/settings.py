@@ -25,7 +25,7 @@ SECRET_KEY = 'o(^#p#_y=0qy!7csv%u-a2mbs6_8%y9kb$++3q1b#&)vpbdscp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
