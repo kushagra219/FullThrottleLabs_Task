@@ -5,13 +5,17 @@ Task on Django Rest Framework deployed on Heroku domain https://fullthrottlelabs
 * Django
 * Django Rest Framework
 * Gunicorn (deployment)
+* Faker
 
 ## Documentation of "activity" app
+
+### activity/management/commands/load_random_data.py - 
+* custom management command to populate the database with some dummy data
 
 ### activity/models.py - 
 * It contains two models User model and ActivityPeriod Model
 
-### activity/serilizers.py - 
+### activity/serializers.py - 
 * It contains two serializers UserSerializer and ActivityPeriodSerializer
 
 ### activity/views.py - 
@@ -22,3 +26,4 @@ Task on Django Rest Framework deployed on Heroku domain https://fullthrottlelabs
 
 ## Reference Links
 * https://www.django-rest-framework.org/
+* https://github.com/joke2k/faker
